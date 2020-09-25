@@ -17,11 +17,12 @@ body {
 	height: 40px;
 	background: black;
 	border-radius: 50%;
+	cursor: pointer;
 }
 
 #imagesContainer {
 	margin: 10px auto;
-	background-color: #ccc;
+	background-color: black;
 	width: 200px;
 	display: flex;
 	overflow: hidden;
@@ -33,16 +34,19 @@ body {
 	height: 200px;
 	padding: 20px;
 	background: #777;
+	opacity: 0.5;
 	flex-grow: 0;
 	flex-shrink: 1;
+	transition: opacity 1s ease-in-out;
 }
 
 .image.selected {
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: -1;
-	background: black;
+	background: radial-gradient(#222,black);
 	color: #777;
+	opacity: 1;
 }
 
 #pagesContainer {
@@ -60,8 +64,7 @@ body {
 	border-radius: 10px;
 	cursor: pointer;
 	transition-property: width color;
-	transition-duration: 0.5s;
-	transition-timing-function: ease-out;
+	transition: 0.5s ease-out;
 }
 
 .page.selected {
