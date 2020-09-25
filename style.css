@@ -3,6 +3,22 @@ body {
 	background-color:#eee;
 }
 
+#slider {
+	display: flex;
+	margin: auto;
+	width: 300px;
+	align-items: center;
+}
+
+.arrow {
+	display: flex;
+	justify-content: center;
+	width: 40px;
+	height: 40px;
+	background: black;
+	border-radius: 50%;
+}
+
 #imagesContainer {
 	margin: 10px auto;
 	background-color: #ccc;
