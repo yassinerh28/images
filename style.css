@@ -44,7 +44,7 @@ body {
 	flex-grow: 1;
 	flex-shrink: 0;
 	order: -1;
-	background: radial-gradient(#222,black);
+	background: radial-gradient(#333,black);
 	color: #777;
 	opacity: 1;
 }
